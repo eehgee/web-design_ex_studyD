@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+#wrap{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aside{
+    width: 200px;
+    height: 650px;
+    background-color: rgb(227, 222, 208);
+}
+
+#aside .logo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aside .nav{
+    width: 100%;
+    height: 80%;
+}
+
+.nav > ul > li > a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(228, 204, 179);
+}
+
+.nav > ul > li > a:hover{
+    background-color: rgb(157, 133, 108);
+}
+
+.nav > ul > li > ul{
+    display: none;
+}
+
+.nav > ul > li > ul > li > a{
+    display: block;
+    padding: 10px;
+    background-color: beige;
+}
+
+.nav > ul > li > ul > li > a:hover{
+    color: rgb(157, 133, 108);
+}
+
+#main{
+    width: calc(100% - 200px);
+    height: 650px;
+}
+
+#section{
+    display: flex;
+}
+
+#slider{
+    width: calc(100% - 230px);
+    height: 400px;
+    overflow: hidden;
+}
+
+.sliderwrap{
+    width: 400%;
+    display: flex;
+}
+
+.sliding{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.sliding img{
+    width: 100%;
+    height: 400px;
+    vertical-align: top;
+}
+
+.sliding span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+#shortcuts{
+    width: 230px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 236, 227);
+}
+
+.shortcuts_wrap{
+    width: 220px;
+    height: 390px;
+    border: 1px solid #000;
+}
+
+.shorts_img a img{
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+}
+
+.shorts_txt{
+    font-size: 13px;
+    padding: 5px;
+}
+
+.shorts_txt p{
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shorts_icon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.shorts_icon a img{
+    width: 90px;
+}
+
+#contents{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(216, 192, 157);
+}
+
+.tab-menu{
+    display: flex;
+    padding: 20px;
+}
+
+.notice{
+    padding: 10px;
+    width: 50%;
+    height: 250px;
+}
+
+.notice-btn a{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(113, 95, 71);
+    color: #fff;
+}
+
+.notice-cont{
+    line-height: 2.3;
+    background-color: rgb(244, 236, 227);
+}
+
+.notice-cont ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.notice-cont ul li span{
+    margin-left: 69%;
+}
+
+.gallery{
+    padding: 10px;
+    width: 50%;
+    height: 250px;
+}
+
+.gallery-btn a{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(174, 89, 47);
+    color: #fff;
+}
+
+.gallery-cont{
+    background-color: rgb(203, 184, 166);
+}
+
+.gallery-cont ul{
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery-cont ul li a img{
+    padding: 13px;
+    width: 200px;
+    height: 100px;
+}
+
+.gallery-cont ul li span{
+    font-size: 13px;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(234, 232, 229);
+}
+
+#footer .foot1{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot1 h1 a img{
+    width: 150px;
+}
+
+#footer .foot2{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#footer .foot3{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot3 select{
+    width: 170px;
+}
+
+#wrap{
+    position: relative;
+}
+
+.popup-review{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+    border: 2px solid #000;
+    display: none;    
+}
+
+.popup-title{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.popup-title p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.popup-close{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(216, 192, 157);
+    cursor: pointer;
+    padding: 20px 20px;
+}
