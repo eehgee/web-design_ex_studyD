@@ -28,7 +28,6 @@ $(function(){
     }, 3000);
     // 슬라이드 끝
 
-
     // 모달 레이어 팝업창 시작
     $(".popup-btn").click(function(){
         $(".popup-review").show();
